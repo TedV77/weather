@@ -1,0 +1,18 @@
+<H1>Philadelphia Weather</H1>
+
+<h3>Current reading</h3>
+
+<% if(temperature !== null){ %>
+  <p>Temperature: <%= temperature %></p>
+<% } %>
+<% if(humidity !== null){ %>
+  <p>Humidity: <%= humidity %></p>
+<% } %>
+<% if(apparentTemperature !== null){ %>
+  <p>Feels like: <%= apparentTemperature %></p>
+<% } %>
+<% if(temperature == null){ %>
+  <p><%= error %></p>
+<% } %>
+
+
